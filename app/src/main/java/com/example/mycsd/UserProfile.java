@@ -27,7 +27,7 @@ import java.util.concurrent.TimeUnit;
 public class UserProfile extends AppCompatActivity {
 
     //Variables
-    TextInputLayout fullname, trimester, currentDate, startDate, email, username;
+    TextInputLayout fullname, email, username;
     TextView fullnameLabel, usernameLabel;
 
     //Firebase
@@ -91,6 +91,5 @@ public class UserProfile extends AppCompatActivity {
         startActivity(i);
         finish();
     }
-
 
 }
