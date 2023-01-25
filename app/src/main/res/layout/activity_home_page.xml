@@ -108,7 +108,6 @@
                 android:onClick="mycsd"
                 app:cardBackgroundColor="@color/thirdColor"
                 app:cardElevation="20dp">
-
                 <RelativeLayout
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
@@ -117,16 +116,18 @@
                     <ImageView
                         android:layout_width="80dp"
                         android:layout_height="80dp"
-                        android:layout_centerInParent="true" />
+                        android:layout_centerInParent="true"
+                        android:layout_centerHorizontal="true"
+                        />
 
                     <TextView
-                        android:id="@+id/csd"
+                        android:id="@+id/event"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_centerInParent="true"
                         android:fontFamily="@font/poppins"
                         android:gravity="center_horizontal"
-                        android:text="MyCSD"
+                        android:text="Upcoming Events"
                         android:textAlignment="center"
                         android:textColor="@color/white"
                         android:textSize="20sp" />
@@ -171,6 +172,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_centerInParent="true"
+                        android:gravity="center_horizontal"
                         android:fontFamily="@font/poppins"
                         android:text="Add Event"
                         android:textColor="@color/white"
@@ -197,19 +199,45 @@
                     <ImageView
                         android:layout_width="80dp"
                         android:layout_height="80dp"
-                        android:layout_centerInParent="true"
-                        android:layout_centerHorizontal="true"
-                        />
+                        android:layout_centerInParent="true" />
 
                     <TextView
-                        android:id="@+id/event"
+                        android:id="@+id/csd"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_centerInParent="true"
                         android:fontFamily="@font/poppins"
                         android:gravity="center_horizontal"
-                        android:text="Upcoming Events"
+                        android:text="More about MyCSD"
                         android:textAlignment="center"
+                        android:textColor="@color/white"
+                        android:textSize="20sp" />
+
+                </RelativeLayout>
+
+            </com.google.android.material.card.MaterialCardView>
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="0dp"
+                android:layout_height="125dp"
+                android:layout_margin="10dp"
+                android:layout_weight="1"
+                android:onClick="analysis"
+                app:cardBackgroundColor="@color/thirdColor"
+                app:cardElevation="20dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:padding="5dp">
+
+
+                    <TextView
+                        android:id="@+id/analysis"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:fontFamily="@font/poppins"
+                        android:text="Analysis"
                         android:textColor="@color/white"
                         android:textSize="20sp" />
 

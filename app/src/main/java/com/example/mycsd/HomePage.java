@@ -54,6 +54,11 @@ public class HomePage extends AppCompatActivity {
         startActivity(i);
     }
 
+    public void analysis(View view) {
+        Intent i = new Intent(HomePage.this, UserProfile.class);
+        startActivity(i);
+    }
+
 
 
 }
